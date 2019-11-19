@@ -15,7 +15,7 @@ import (
 
 // Fields --
 type Fields struct {
-	list map[string]string
+	list misc.StringMap
 }
 
 //----------------------------------------------------------------------------------------------------------------------------//
@@ -65,7 +65,7 @@ func populate(name []byte, data interface{}, fields *Fields) {
 // Do --
 func Do(data interface{}) *Fields {
 	fields := &Fields{
-		list: make(map[string]string),
+		list: make(misc.StringMap),
 	}
 	populate(make([]byte, 0), data, fields)
 	return fields
