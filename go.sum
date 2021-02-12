@@ -1,4 +1,2 @@
-github.com/alrusov/bufpool v0.1.0 h1:rHjiYY6K/KDJtJif87BXAIMe18TsQgligq0b8xHL19E=
-github.com/alrusov/bufpool v0.1.0/go.mod h1:WQGPTsMZFX0fE9s+PLloqXgXMjgg6WICjTvqp9aWpNU=
-github.com/alrusov/misc v0.1.3 h1:ed1E+y0z16huS694Bvp36qJbhdtXOIlQTtlRzoUgQsA=
-github.com/alrusov/misc v0.1.3/go.mod h1:IN1ACWOqkBR4fnQEZ5I6wknwOllfPsfxkR2x05kDDnk=
+github.com/alrusov/misc v0.1.34 h1:ua91lwh3UnX6E3MjWEUnqWlLekXPBE+kJR/d92o9+nA=
+github.com/alrusov/misc v0.1.34/go.mod h1:wq7jkLgy8u0ogF2EyY1Goes9GftiRcK4w1wH1vM9JFc=
