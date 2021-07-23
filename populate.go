@@ -43,19 +43,19 @@ func populate(name []byte, data interface{}, fields *Fields) {
 
 	default:
 		v := ""
-		switch data.(type) {
+		switch data := data.(type) {
 		case bool:
-			if data.(bool) {
+			if data {
 				v = "true"
 			} else {
 				v = "false"
 			}
 		case string:
-			v = data.(string)
+			v = data
 		case int64:
-			v = fmt.Sprintf("%d", data.(int64))
+			v = fmt.Sprintf("%d", data)
 		case float64:
-			v = misc.TrimStringAsFloat(fmt.Sprintf("%f", data.(float64)))
+			v = misc.TrimStringAsFloat(fmt.Sprintf("%f", data))
 		}
 		fields.list[string(name)] = v
 	}
@@ -99,7 +99,7 @@ func (f Fields) Bool(name string) (val bool, exists bool, err error) {
 		return false, true, nil
 	}
 
-	return false, true, fmt.Errorf(`Bad boolean "%s"`, v)
+	return false, true, fmt.Errorf(`bad boolean "%s"`, v)
 }
 
 //----------------------------------------------------------------------------------------------------------------------------//
